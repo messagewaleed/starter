@@ -1,5 +1,7 @@
 package com.socgen.development;
 
+import java.util.Objects;
+
 class Other{
     void work(Laptop laptop){
         //Do something with these here
@@ -13,12 +15,20 @@ interface Computer{
 
 //Java 17 records
 
-record Laptop(int ram, String name, String uId) implements Computer{
+record Laptop(Integer ram, String name, String uId) implements Computer {
     @Override
     public void calculate() {
         System.out.println("Laptop's calculate...");
     }
+
+    @Override
+    public boolean equals(Object ref) {
+      return this.ram().equals(((Laptop)ref).ram());
+    }
+
 }
+
+
 
 //java 5 enums
 //enum MyEnum{FIRST, SECOND, THIRD}
@@ -170,7 +180,15 @@ public class MovingAhead{
 
 
     Laptop firstLaptop = new Laptop(8, "EliteBook", "73882656");
-    Laptop secondLaptop = new Laptop(8, "EliteBook", "87287298");
+    Laptop secondLaptop = new Laptop(16, "EliteBook", "73882656");
+
+    if(firstLaptop.equals(secondLaptop)){
+        System.out.println("Same laptops");
+    }else{
+        System.out.println("Different laptops...");
+    }
+
+
     Laptop thirdLaptop = new Laptop(16, "ChromeBook", "232388");
 
     Laptop laptopForIndia = new Laptop(8, "macbook pro", "82798230");

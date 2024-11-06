@@ -22,3 +22,44 @@ class SomeOther{
         ref.workFromOffice();
     }
 }
+
+
+//
+//Collections
+//    - Growable
+//    - Shrinkable
+//    - Sortable
+//    - Searchable
+//    - Store objects
+//
+//        Ordering
+
+//Lohit
+//Mohit
+//Aksha
+//Sridesh
+//Sumit
+
+//Print them back on screen:
+
+
+
+//Lohit
+//Sumit
+//Mohit
+//Aksha
+//Sridesh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
