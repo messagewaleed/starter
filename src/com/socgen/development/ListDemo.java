@@ -1,6 +1,7 @@
 package com.socgen.development;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ListDemo {
@@ -13,6 +14,7 @@ public static void main(String[] args) {
     listOfNames.add("Waleed");
     listOfNames.add("Tanishq");
     listOfNames.add("Mohit");
+    listOfNames.add("Amar");
     listOfNames.add("Tanishq");
 //    listOfNames.add(670);
 //    listOfNames.add(56.90);
@@ -20,9 +22,11 @@ public static void main(String[] args) {
 
     String value = listOfNames.get(2);
 
-    listOfNames.remove("Mohit");
+    //listOfNames.remove("Mohit");
 
-    System.out.println(listOfNames.size());
+    Collections.sort(listOfNames);
+
+    //System.out.println(listOfNames.size());
 
 //    System.out.println(listOfNames);
 

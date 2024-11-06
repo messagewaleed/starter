@@ -13,6 +13,9 @@ interface Computer{
 }
 
 
+//Comparable
+//    - int compareTo(Object ref)
+
 //Java 17 records
 
 record Laptop(Integer ram, String name, String uId) implements Computer {
@@ -25,8 +28,10 @@ record Laptop(Integer ram, String name, String uId) implements Computer {
     public boolean equals(Object ref) {
       return this.ram().equals(((Laptop)ref).ram());
     }
-
 }
+
+//Comparator
+//    - compare(o1, o2)
 
 
 
