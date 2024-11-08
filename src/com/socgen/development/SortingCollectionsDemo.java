@@ -52,3 +52,30 @@ class SortLaptopsByUId implements Comparator<Laptop>{
         return o1.uId().compareTo(o2.uId());
     }
 }
+
+
+//Participant API
+//    - 1. Enter details
+//        2. Display all participant details
+//        3. Search
+//        4. Delete details
+//        5. Update details
+//        6. Sort
+//            a. By First Name
+//            b. By Last Name
+//            c. By Age
+//            d. By Skills
+//
+//        0. Exit
+
+
+
+
+
+
+
+
+
+
+
+
